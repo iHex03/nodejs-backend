@@ -1,0 +1,32 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name": "Henrique",
+    "password": "henrique123",
+    "email": "henrique@dominio.com"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "henrique@dominio.com",
+    "password": "henrique123"
+}
+
+###
+
+GET http://localhost:3000/search
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiaGVucmlxdWVAZG9taW5pby5jb20ifSwiaWF0IjoxNzM3NjgyNzA4fQ.36b-szmOy-asfhndYs25706ieoDCVf8m4IMc_VAn7rE
+
+###
+
+POST http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiaGVucmlxdWVAZG9taW5pby5jb20ifSwiaWF0IjoxNzM3NjgyNzA4fQ.36b-szmOy-asfhndYs25706ieoDCVf8m4IMc_VAn7rE"
+}
